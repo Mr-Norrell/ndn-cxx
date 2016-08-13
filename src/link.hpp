@@ -155,6 +155,9 @@ public:
   static ssize_t
   countDelegationsFromWire(const Block& block);
 
+  bool
+  isNewer(const Link& other);
+
 protected:
   /** @brief prepend Link object as a Content block to the encoder
    *

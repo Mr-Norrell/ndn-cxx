@@ -243,4 +243,13 @@ Link::removeDelegationNoEncode(const Name& name)
   return hasRemoved;
 }
 
+bool
+Link::isNewer(const Link &other)
+{
+    if(this->getName()>other.getName())
+        return true;
+    else
+        return false;
+}
+
 } // namespace ndn
